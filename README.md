@@ -1,7 +1,7 @@
 # aemo-sra-solver (Work in Progress)
 
-An LP solver designed on AEMO's Settlements Residue Auction (SRA) solver, but excluding linked bid functionality. This is an integer programming problem.
+The unofficial AEMO Settlements Residue Auction (SRA) solver, but excluding linked bid functionality. This is not endorsed by AEMO.
 
-To run an instance of the LP solver, input bids and primary ($0 priced) and secondary (trader priced) allocation offers according to the data specification.
+To run the LP solver, input bids and primary ($0 priced) and secondary (trader priced) offers according to the data specification.
 
-On the roadmap is setting up of AEMO data pipelines, and a pip package build and make design more object-oriented.
+On the roadmap is adding AEMO data pipelines and a pip package

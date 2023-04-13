@@ -4,4 +4,4 @@ An LP solver designed on AEMO's Settlements Residue Auction (SRA) solver, but ex
 
 To run an instance of the LP solver, input bids and primary ($0 priced) and secondary (trader priced) allocation offers according to the data specification.
 
-On the roadmap is setting up of AEMO data pipelines, and a pip package build. 
+On the roadmap is setting up of AEMO data pipelines, and a pip package build and make design more object-oriented.

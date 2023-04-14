@@ -37,7 +37,10 @@ def load_bids(df):
 
     """
 
-    df = df.astype({'PRICE': float, 'UNITS': int})
+    df = (
+        df.astype({'PRICE': float, 'UNITS': int})
+        .sort_values(by='PRICE')
+    )
 
     return df
 
@@ -82,6 +85,7 @@ def load_offers(df):
         .sort_values(by='PRICE', ascending=True)
         .assign(CUMSUM_UNITS=lambda x: x['UNITS'].cumsum())
         .assign(UNCLEARED=lambda x: x['SUM_UNITS'] - x['CUMSUM_UNITS'])
+        .sort_values(by='PRICE')
     )
 
     return df

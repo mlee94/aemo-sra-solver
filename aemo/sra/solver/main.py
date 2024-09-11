@@ -98,6 +98,8 @@ def solve(bids, offers):
     # Optimize
     mdl.solve()
 
+    # Solved twice for illustrative purposes only - price can be retrieved using duals instead.
+    
     new_objective = cleared_bid_value.value() + uncleared_offer_value.value()
 
     clearing_price = round(total_objective - new_objective, 2)
